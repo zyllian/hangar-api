@@ -1,0 +1,19 @@
+[package]
+description = "api for Hangar"
+edition = "2021"
+homepage = "https://github.com/zyllian/hangar-api"
+license = "WTFPL"
+name = "hangar-api"
+readme = "README.md"
+repository = "https://github.com/zyllian/hangar-api"
+version = "0.1.0"
+
+[dependencies]
+clap = {version = "4", features = ["derive"], optional = true}
+constcat = "0.5"
+serde = {version = "1", features = ["derive"]}
+time = {version = "0.3", features = ["serde", "parsing"]}
+typed-builder = "0.20"
+
+[features]
+default = ["clap"]
