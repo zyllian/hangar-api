@@ -16,4 +16,4 @@ time = {version = "0.3", features = ["serde", "parsing"]}
 typed-builder = "0.20"
 
 [features]
-default = ["clap"]
+clap = ["dep:clap"]
